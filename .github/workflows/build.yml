@@ -1,5 +1,6 @@
 name: Build
-on: push
+on: 
+  workflow_dispatch:  # Allows manual triggering of the workflow
 jobs:
   PyInstaller:
     runs-on: ${{ matrix.os }}
